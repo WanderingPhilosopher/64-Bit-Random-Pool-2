@@ -58,9 +58,9 @@ SHA256 Checksum for KH32.exe     = ```b155652aaf9cf50720ae8cff76a3b04495321f4fac
 
 (Verify by opening cmd, change directory to where files are located, and run CertUtil -hashfile KHClient.exe SHA256 and CertUtil -hashfile KH32.exe SHA256
 
-Place them in the same folder. Create a batch file such as:
+Place them in the same folder. Create a batch file EXACTLY like this:
 
-KHClient.exe -d 0 -name username
+```KHClient.exe -d 0 -name username```
 
 If you have multiple GPUs on a single PC/rig, use the -d flag to signify which GPU to use. -d 0 for GPU 0, -d 1 for GPU 1, etc.
 
