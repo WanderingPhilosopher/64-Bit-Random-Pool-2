@@ -65,3 +65,8 @@ The username is how the program tracks how many ranges you have been assigned an
 Wait, what? .60 ????? I thought it was for .64 BTC???? I am glad you are paying attention! .04 will go to the user who finds the private key. Yes, the program allows me to see who actually found the key. So overall, the pool will split, based on amount of work each user does, .60 BTC and the private key finder will get .04, in addition to their equal share. So if user is owed .055 BTC based on their work, and they find the key, they will get .055 + .04 = .095 BTC. So make sure you run your GPUs as often as you can.
 
 While we are searching for the key, you can message me your BTC address so I will have a record of it when we do find the key! Once we find the key, I will message everyone who participated and sent me their BTC address to verify the address is correct.
+
+Stats look like this:
+
+![image](https://user-images.githubusercontent.com/65258474/133953862-94be3b64-c98c-48db-bcb6-b2ecaef9ed62.png)
+
