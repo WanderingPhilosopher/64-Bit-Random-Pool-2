@@ -50,7 +50,7 @@ We will be using a different client and cracking program this time around as wel
 
 How do you join and get started?
 
-Download the 2 files from here: https://github.com/WanderingPhilosopher/64-Bit-Random-Pool-2/releases or discord channel: https://discord.com/channels/871109371805962240/889292084190777394 . Place them in the same folder. Create a batch file such as:
+Download the 2 files from here: https://github.com/WanderingPhilosopher/64-Bit-Random-Pool-2/releases/tag/v1.0 or discord channel: https://discord.com/channels/871109371805962240/889292084190777394 . Place them in the same folder. Create a batch file such as:
 
 KHClient.exe -d 0 -name username
 
