@@ -10,8 +10,11 @@ GPU threads will spread out inside each subrange in 2^15 smaller subranges and c
 So, this way, each round we will check 2^48 keys but spread out over the entire range versus checking every key in every range like TD’s pool. 
 
 Here is example of one of my tests, to ensure no overlap. this is the beginning range:
+
 8000000000000000:87ffffffffffffff
+
 8000000000008000:8800000000006fff
+
 8000000000010000:880000000000dfff
 
 See how it's incremented?  (Note, this was a test on larger subranges so I could get through them quicker, the pool subranges will be much smaller, but this should give you an idea on the increments between rounds)
