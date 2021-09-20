@@ -37,9 +37,13 @@ After all ranges have been ran (if key hasn't been found), we will reset the sta
 
 By doing it this way, hopefully we catch the key in a smaller subrange and soon. If we do not, we will eventually because eventually we will have checked every key in the 64-bit range.
 
-If you are connected and running a client, eventually you will see a message on your screen that says, [INFO UPDATE] Range Sent
+If you are connected and running a client, eventually you will see a message on your screen that says:
+[INFO UPDATE] Range Sent
+
 [INFO UPDATE] Resetting Ranges
+
 [MAIN] Resetting...
+
 [INFO UPDATE] Resetting Ranges. 
 
 That is by design so do not turn off your machine. That lets us know we are done with the current round, and we need to adjust for the next range. Once I adjust the ranges and restart the server, your GPU will pick back up where it left off and keep working through ranges. 
