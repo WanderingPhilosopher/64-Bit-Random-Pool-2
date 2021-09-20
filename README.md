@@ -47,3 +47,21 @@ That is by design so do not turn off your machine. That lets us know we are done
 Excluding myself with multiple GPUs, we normally had 3-5 additional users connected and running in the pool. With 8-10 cards running, we should get through each round quickly, which was the original intent. I alone will have at least 4 cards running at a time, at all times.
 
 We will be using a different client and cracking program this time around as well. The client has to be new/reconfigured because of the different cracking program. The program will work with all recent cards, GTX 10xx, GTX16xx, RTX 20xx and 30xx cards. The new client program also allows multiple cards on one rig to run without bottlenecking the CPU. With the old program, my rig started bottlenecking the CPU with 4-5 cards running.
+
+How do you join and get started?
+
+Download the 2 files from here: https://github.com/WanderingPhilosopher/64-Bit-Random-Pool-2/releases or discord channel: https://discord.com/channels/871109371805962240/889292084190777394 . Place them in the same folder. Create a batch file such as:
+
+KHClient.exe -d 0 -name username
+
+If you have multiple GPUs on a single PC/rig, use the -d flag to signify which GPU to use. -d 0 for GPU 0, -d 1 for GPU 1, etc.
+
+Replace the -name username with your actual username, such as for me, -name wanderph ; I wanted to be able to use a BTC address but the database is case insensitive and at this time, that won't work But please only use one username whether you have 1 GPU or 1,000 GPUs. Keep the username the same. Example if using two GPUs: GPU 0 = Client.exe -d 0 -name wanderph GPU 1 = Client.exe -d 1 -name wanderph
+
+If you have multiple GPUs, it is better to run each one on a separate/different instance versus running them together. If you have 2 GPUs, let them run the program seperately, it helps the pool check each range quicker and gives you credit for 2 ranges versus 1 range.
+
+The username is how the program tracks how many ranges you have been assigned and completed. This is IMPORTANT because this is how we know who to pay and how much to pay them. Users will be paid based on their work. Your total ranges checked divided by total ranges checked equals your payout. Example: You checked 125,000 ranges and it took us 1,000,000 ranges checked to find the key then your amount would be 125,000 divided by 1,000,000 = .125 percent of ranges checked. Now multiply that by the amount of BTC we will find, .60 so your BTC payout would be .125 multiplied by .60 = .075 BTC.
+
+Wait, what? .60 ????? I thought it was for .64 BTC???? I am glad you are paying attention! .04 will go to the user who finds the private key. Yes, the program allows me to see who actually found the key. So overall, the pool will split, based on amount of work each user does, .60 BTC and the private key finder will get .04, in addition to their equal share. So if user is owed .055 BTC based on their work, and they find the key, they will get .055 + .04 = .095 BTC. So make sure you run your GPUs as often as you can.
+
+While we are searching for the key, you can message me your BTC address so I will have a record of it when we do find the key! Once we find the key, I will message everyone who participated and sent me their BTC address to verify the address is correct.
