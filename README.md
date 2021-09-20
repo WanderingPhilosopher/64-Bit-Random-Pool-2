@@ -22,11 +22,14 @@ See how it's incremented?  (Note, this was a test on larger subranges so I could
 So we are still checking “random” keys in each subrange, but each round will be sequential in nature. 
 Example:
 If you get assigned range 8000000000000000:87ffffffffffffff
-Instead of running and checking every key in the range, your GPU threads will spread out every 2^15 subranges.
+Instead of running and checking every key in the range, your GPU threads will spread out every 2^48/2^15 subranges.
+
 Thread 1 will start at key: 8000000000000000
 And will sequentially check the first: 131,072 keys (8000000000000000 thru 8000000000020000)
+
 Thread 2 will start at key: 80000FFFFFFFFFFF
 And will sequentially check the first: 131,072 keys (80000fffffffffff thru 800010000001ffff)
+
 The last thread will start at key: 87FFEFFFFFFF8001
 And will sequentially check the first: 131,072 keys (87FFEFFFFFFF8001 thru 87fff00000018001)
 
