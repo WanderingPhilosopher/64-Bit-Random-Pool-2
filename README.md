@@ -38,6 +38,7 @@ After all ranges have been ran (if key hasn't been found), we will reset the sta
 By doing it this way, hopefully we catch the key in a smaller subrange and soon. If we do not, we will eventually because eventually we will have checked every key in the 64-bit range.
 
 If you are connected and running a client, eventually you will see a message on your screen that says:
+
 [INFO UPDATE] Range Sent
 
 [INFO UPDATE] Resetting Ranges
