@@ -5,8 +5,8 @@ Ok, as said, we will be redoing the way the 64-bit random pool is done.
 
 We started out with 2^19 subranges and that was too many or just not enough participants, which the latter is/was expected.
 
-For this round and beyond, the range will again be divided up, this time into 2^16 ranges, so each subrange will be 2^47 in size. Subranges will be assigned randomly. 
-GPU threads will spread out inside each subrange in 2^47/2^15 smaller subranges and check 2^32 keys. Once all ranges have been checked (should be a lot quicker this time around, to get through each range), I will add 20000 (in hex) to the beginning range and subtract 20000 (in hex) from the end of the last range, and we will run the next round. 
+For this round and beyond, the range will again be divided up, this time into 2^17 ranges, so each subrange will be 2^46 in size. Subranges will be assigned randomly. 
+GPU threads will spread out inside each subrange in 2^46/2^15 smaller subranges and check 2^32 keys. Once all ranges have been checked (should be a lot quicker this time around, to get through each range), I will add 20000 (in hex) to the beginning range and subtract 20000 (in hex) from the end of the last range, and we will run the next round. 
 So, this way, each round we will check 2^48 keys but spread out over the entire range versus checking every key in every range like TD’s pool. 
 
 Here is example of one of my tests, to ensure no overlap. this is the beginning range:
@@ -22,7 +22,7 @@ See how it's incremented?  (Note, this was a test on larger subranges so I could
 So we are still checking “random” keys in each subrange, but each round will be sequential in nature. 
 Example:
 If you get assigned range 8000000000000000:87ffffffffffffff
-Instead of running and checking every key in the range, your GPU threads will spread out every 2^47/2^15 subranges.
+Instead of running and checking every key in the range, your GPU threads will spread out every 2^46/2^15 subranges.
 
 Thread 1 will start at key: 8000000000000000
 And will sequentially check the first: 131,072 keys (8000000000000000 thru 8000000000020000)
