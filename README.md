@@ -57,9 +57,9 @@ How do you join and get started?
 
 Download the 2 files from here: https://github.com/WanderingPhilosopher/64-Bit-Random-Pool-2/releases/tag/v2.0 or discord channel: https://discord.com/channels/871109371805962240/889292084190777394 . 
 
-SHA256 Checksum for KHClient.exe = ```44c199504de22e526ff3bd72aaa68c8a1920484bf9b0712bdb1098a775461ef8```
+SHA256 Checksum for KHClientV2.exe = ```426aaef8ba24e59b64292ba124d66acc0a8f8cca5befccfa5cd72355417fa611```
 
-SHA256 Checksum for KH32.exe     = ```426aaef8ba24e59b64292ba124d66acc0a8f8cca5befccfa5cd72355417fa611```
+SHA256 Checksum for KHV2.exe     = ```44c199504de22e526ff3bd72aaa68c8a1920484bf9b0712bdb1098a775461ef8```
 
 (Verify by opening cmd, change directory to where files are located, and run CertUtil -hashfile KHClient.exe SHA256 and CertUtil -hashfile KH32.exe SHA256
 
