@@ -55,17 +55,17 @@ We will be using a different client and cracking program this time around as wel
 
 How do you join and get started?
 
-Download the 2 files from here: https://github.com/WanderingPhilosopher/64-Bit-Random-Pool-2/releases/tag/v1.0 or discord channel: https://discord.com/channels/871109371805962240/889292084190777394 . 
+Download the 2 files from here: https://github.com/WanderingPhilosopher/64-Bit-Random-Pool-2/releases/tag/v2.0 or discord channel: https://discord.com/channels/871109371805962240/889292084190777394 . 
 
-SHA256 Checksum for KHClient.exe = ```78cd069446995cced9582fc78827077197e291d7af10b7b6af0e49751bfb9bd3```
+SHA256 Checksum for KHClient.exe = ```44c199504de22e526ff3bd72aaa68c8a1920484bf9b0712bdb1098a775461ef8```
 
-SHA256 Checksum for KH32.exe     = ```b155652aaf9cf50720ae8cff76a3b04495321f4face0b2927849c805231cad00```
+SHA256 Checksum for KH32.exe     = ```426aaef8ba24e59b64292ba124d66acc0a8f8cca5befccfa5cd72355417fa611```
 
 (Verify by opening cmd, change directory to where files are located, and run CertUtil -hashfile KHClient.exe SHA256 and CertUtil -hashfile KH32.exe SHA256
 
 Place them in the same folder. Create a batch file EXACTLY like this:
 
-```KHClient.exe -d 0 -name username```
+```KHClientV2.exe -d 0 -name username```
 
 If you have multiple GPUs on a single PC/rig, use the -d flag to signify which GPU to use. -d 0 for GPU 0, -d 1 for GPU 1, etc.
 
